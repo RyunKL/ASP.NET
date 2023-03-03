@@ -1,8 +1,30 @@
-﻿@{
+﻿@model TipsCalculator
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Ryan Lee's Project's: building Web apps with ASP.NET Core</p>
 </div>
+
+<form class="text-center" asp-action="Index" method="post">
+    <div>
+        <label>Cost of Item:</label>
+        <input asp-for="ItemCost" />   
+    </div>
+    <div>
+        <label>15% Tip</label>
+        <label>@ViewBag.Fifteen.ToString("c2")</label>
+    </div>
+    <div>
+        <label>20% Tip</label>
+        <label>@ViewBag.Twenty.ToString("c2")</label>
+    </div>
+    <div>
+        <label>25% Tip</label>
+        <label>@ViewBag.TwentyFive.ToString("c2")</label>
+    </div>
+    <button type="submit">Calculate</button>
+    <a asp-action="Index">Clear</a>
+</form>

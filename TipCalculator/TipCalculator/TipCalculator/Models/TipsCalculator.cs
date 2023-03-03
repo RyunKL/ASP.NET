@@ -12,6 +12,7 @@ namespace TipCalculator.Models
             if (ItemCost.HasValue)
             {
                 var tip = percent * ItemCost.Value;
+                return tip;
             }
             return 0.0;
         }
