@@ -29,15 +29,8 @@ namespace TipCalculator.Controllers
                 ViewBag.Twenty = calc.CalculateTip(0.2);
                 ViewBag.TwentyFive = calc.CalculateTip(0.25);
             }
-            else
-            {
-                ViewBag.Fifteen = 0;
-                ViewBag.Twenty = 0;
-                ViewBag.TwentyFive = 0;
-            }
             return View(calc);
         }
-
         public IActionResult Privacy()
         {
             return View();
