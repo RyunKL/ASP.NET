@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BakeryQT", "BakeryQT\BakeryQT.csproj", "{50EFD9B7-E273-4D6A-983C-2C3F1057D758}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50EFD9B7-E273-4D6A-983C-2C3F1057D758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50EFD9B7-E273-4D6A-983C-2C3F1057D758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50EFD9B7-E273-4D6A-983C-2C3F1057D758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50EFD9B7-E273-4D6A-983C-2C3F1057D758}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB89734D-D2C5-44F2-9A06-872A3DE0D2CC}
+	EndGlobalSection
+EndGlobal
