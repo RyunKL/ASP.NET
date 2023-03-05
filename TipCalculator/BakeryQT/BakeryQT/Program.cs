@@ -1,3 +1,6 @@
+using BakeryQT.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -8,6 +11,7 @@ builder.Services.AddRouting(options =>
     options.LowercaseQueryStrings= true;    
 });
 
+builder.Services.AddDbContext<ContactContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ContactContext")));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
